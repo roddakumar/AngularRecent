@@ -1,0 +1,7 @@
+
+<div *ngIf="hasData(data)">
+<p class="currentStyles">FormRegistrationPage : {{data?.firstname}}</p>
+</div>
+<div *ngIf="hasData(formData)">
+<p [ngStyle]="currentStyles">UsingForms : {{formData?.name}} && {{formData?.address}}</p>
+</div>

@@ -1,0 +1,52 @@
+ <div class="container" appHighlight>  <!-- appHighlight creating custom attribute directive -->
+
+  <h1>User Registration</h1>
+
+  <form (submit)="postData()">
+
+    <div class="form-group">
+
+      <label for="firstname">FirstName</label><br>
+
+      <input  [(ngModel)]="data.firstname" type="text" class="form-control" name="first"
+        >
+
+    </div>
+
+    <pre></pre>
+
+    <div class="form-group">
+
+      <label for="lastname">LastName</label><br>
+
+      <input [(ngModel)]="data.lastname" type="text" name="last" class="form-control" >
+
+    </div>
+
+    <pre></pre>
+
+    <div class="form-group">
+
+      <label for="email">EmailID</label><br>
+
+      <input [(ngModel)]="data.email" type="text" name="emal" class="form-control" >
+
+    </div>
+
+    <pre></pre>
+
+    <div class="form-group">
+
+      <label for="password">Password</label><br>
+
+      <input  [(ngModel)]="data.password" type="text" name="paswd" class="form-control">
+
+    </div>
+
+    <pre></pre>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+
+  </form>
+
+</div>

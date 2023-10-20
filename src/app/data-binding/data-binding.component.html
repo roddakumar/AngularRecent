@@ -1,0 +1,28 @@
+<h1>Data Binding Example</h1>
+
+    <!-- Interpolation -->
+    <p>{{ message }}</p>
+
+    <!-- Property Binding -->
+    <img [src]="imageUrl" alt="Angular Logo" class="size" />
+
+    <!-- Event Binding -->
+    <button (click)="onClick()">Click me</button>
+    <p>Click Count: {{ clickCount }}</p>
+
+    <!-- Two-Way Data Binding -->
+    <input [(ngModel)]="name" />
+    <p>Hello, {{ name }}!</p>
+
+    <!-- Attribute Binding -->
+    <button [attr.disabled]="isDisabled">Disabled Button</button>
+
+    <!-- Class Binding -->
+    <div [class.highlight]="isHighlighted">This text can be highlighted</div>
+
+    <!-- Style Binding -->
+    <div [style.color]="textColor">Colored text</div>
+
+    Date Pipe: {{ dateToday | date | uppercase}}<br>
+
+    Date Pipe: {{ dateToday | date: 'short' | lowercase}} <br>

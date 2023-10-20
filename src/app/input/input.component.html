@@ -1,0 +1,12 @@
+
+<div class="container p-1 m-1 mt-1 mt-2">
+<label>
+  Enter the text:
+
+<input type="text" #myinput >
+<button (click)=log(myinput.value)>log</button><br>
+<div *ngIf="myinput">
+<app-child [parentDataPass]="myinput.value"></app-child>
+</div>
+</label>
+</div>
